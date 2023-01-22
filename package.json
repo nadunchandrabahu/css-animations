@@ -1,0 +1,14 @@
+{
+  "name": "css-animations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main/main.scss src/styles.css -w"
+  },
+  "author": "nadun chandrabahu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
