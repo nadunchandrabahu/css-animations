@@ -13,6 +13,7 @@ body {
   font-family: sans-serif; }
 
 .btn {
+  display: inline-block;
   width: fit-content;
   font-size: 1.8rem;
   text-decoration: none;
@@ -120,6 +121,76 @@ body {
       transform: rotateY(90deg); }
     .btn__p3-2:hover::before {
       transform: rotateY(0); }
+    .btn__p3-3 {
+      cursor: crosshair; }
+      .btn__p3-3::before {
+        transform: rotateX(90deg); }
+      .btn__p3-3::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        transition: all 1s;
+        z-index: -1;
+        transform: rotateY(90deg); }
+      .btn__p3-3:hover::before {
+        transform: rotateX(0); }
+      .btn__p3-3:hover::after {
+        transform: rotateY(0); }
+  .btn__p4 {
+    font-family: "Roboto", sans-serif;
+    padding: 3.6rem 7.2rem;
+    text-decoration: none;
+    font-size: 3.6rem;
+    transition: all 0.5s; }
+    .btn__p4-1 {
+      color: #e1332d;
+      border: 3px solid #e1332d;
+      font-weight: 300;
+      letter-spacing: -2px; }
+      .btn__p4-1:hover {
+        font-weight: 900;
+        letter-spacing: 10px;
+        border: 6px solid #e1332d; }
+    .btn__p4-2 {
+      color: white;
+      background-color: #222;
+      border: 3px solid white;
+      position: relative;
+      overflow: clip; }
+      .btn__p4-2::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "YES!";
+        background-color: #f44336;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        z-index: 1;
+        transition: all 0.5s; }
+      .btn__p4-2:hover::after {
+        transform: translateY(0%); }
+
+.btn-background {
+  position: relative; }
+  .btn-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff200;
+    transform-origin: 50% 50%;
+    transform: scale(1.5);
+    z-index: 1; }
 
 .container {
   max-width: 162rem;

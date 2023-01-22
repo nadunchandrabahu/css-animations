@@ -1,4 +1,5 @@
 .btn {
+  display: inline-block;
   width: fit-content;
   font-size: 1.8rem;
   text-decoration: none;
@@ -170,5 +171,96 @@
         transform: rotateY(0);
       }
     }
+
+    &-3 {
+      cursor: crosshair;
+      &::before {
+        transform: rotateX(90deg);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        transition: all 1s;
+        z-index: -1;
+        transform: rotateY(90deg);
+      }
+      &:hover::before {
+        transform: rotateX(0);
+      }
+      &:hover::after {
+        transform: rotateY(0);
+      }
+    }
+  }
+
+  //project 4
+
+  &__p4 {
+    font-family: "Roboto", sans-serif;
+    padding: 3.6rem 7.2rem;
+    text-decoration: none;
+    font-size: 3.6rem;
+    transition: all 0.5s;
+
+    &-1 {
+      color: #e1332d;
+      border: 3px solid #e1332d;
+      font-weight: 300;
+      letter-spacing: -2px;
+      &:hover {
+        font-weight: 900;
+        letter-spacing: 10px;
+        border: 6px solid #e1332d;
+      }
+    }
+
+    &-2 {
+      //before element is the background
+      color: white;
+      background-color: #222;
+      border: 3px solid white;
+      position: relative;
+      overflow: clip;
+
+      &::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "YES!";
+        background-color: #f44336;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        z-index: 1;
+        transition: all 0.5s;
+      }
+      &:hover::after {
+        transform: translateY(0%);
+      }
+    }
+  }
+}
+
+.btn-background {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff200;
+    transform-origin: 50% 50%;
+    transform: scale(1.5);
+    z-index: 1;
   }
 }
