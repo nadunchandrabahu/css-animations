@@ -12,6 +12,17 @@ body {
 body {
   font-family: sans-serif; }
 
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2.4rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 3.6rem;
+  font-weight: 400; }
+
 .btn {
   display: inline-block;
   width: fit-content;
@@ -416,6 +427,51 @@ body {
       .btn__p4-9:hover span {
         transform: scale(1);
         transition-delay: 0.4s; }
+    .btn__p4-10 {
+      font-size: 1.4rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-transform: uppercase;
+      background-color: transparent;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+      position: relative;
+      transition: all 0.2s;
+      color: white; }
+      .btn__p4-10:hover {
+        color: #272727; }
+      .btn__p4-10::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        background-color: #20caff;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        transition: all 0.2s;
+        transform-origin: top; }
+      .btn__p4-10::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 100%;
+        height: 100%;
+        background-color: #ff7675;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        transition: all 0.2s;
+        transform-origin: bottom; }
+      .btn__p4-10:hover::before {
+        top: -6px;
+        left: 0;
+        transform: perspective(1500px) rotateX(75deg); }
+      .btn__p4-10:hover::after {
+        top: 6px;
+        left: 0;
+        transform: perspective(1500px) rotateX(-75deg); }
 
 .bg {
   position: relative; }
@@ -450,10 +506,12 @@ body {
   .grid__3col {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 4.8rem; }
+  .grid__4col {
+    grid-template-columns: repeat(4, 1fr); }
 
 section {
-  padding: 15rem 15rem 0;
+  padding: 2rem 15rem 0;
   min-height: 25vh;
   background-color: #eee; }
   section:last-of-type {
-    padding: 15rem; }
+    padding: 2rem 15rem 15rem 15rem; }

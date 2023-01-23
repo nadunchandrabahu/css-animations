@@ -14,4 +14,8 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 4.8rem;
   }
+
+  &__4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
