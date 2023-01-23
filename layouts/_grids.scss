@@ -12,5 +12,6 @@
 
   &__3col {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 4.8rem;
   }
 }
