@@ -61,6 +61,90 @@
       transform: translateX(100%);
     }
   }
+
+  &-4 {
+    .image-caption {
+      top: unset;
+      bottom: 0;
+      height: 30%;
+      background-color: black;
+      transform: translateY(100%);
+      transition: all 0.5s;
+    }
+
+    &:hover .image-caption {
+      transform: translateY(0);
+    }
+
+    .image {
+      transition: all 0.5s;
+    }
+
+    &:hover .image {
+      transform: translateY(-30%);
+    }
+  }
+
+  &-5 {
+    border-radius: 10px;
+
+    .image-caption {
+      font-family: "Raleway", sans-serif;
+      gap: 5px;
+      transform: translateY(-20px);
+      opacity: 0;
+      transition: all 0.25s;
+      transition-delay: 0;
+      h2,
+      p {
+        letter-spacing: 1px;
+      }
+      h2 {
+        font-weight: 400;
+      }
+      p {
+        background-color: #ae895d;
+        padding: 3px 5px;
+      }
+    }
+
+    &:hover .image-caption {
+      transition-delay: 0.3s;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #006266;
+      opacity: 0.5;
+      transform: translateY(100%);
+      transition: all 0.25s;
+      transition-delay: 0.25s;
+    }
+
+    &:hover::before {
+      transform: translateY(0);
+      transition-delay: 0s;
+    }
+  }
+
+  &-6 {
+    width: 30rem;
+    height: 40rem;
+    border: 5px solid white;
+    .image {
+      transition: all 1s;
+    }
+    &:hover .image {
+      transform: scale(1.2) rotate(9deg);
+    }
+  }
 }
 
 // pre-applied properties
