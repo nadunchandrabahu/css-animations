@@ -785,24 +785,138 @@ h1 {
         color: white; }
         .btn__p5-1:hover .wave {
           top: 0; }
-    .btn__p5 .wave {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: calc(100% + 46px);
-      background-color: #00aeff;
-      transition: all 1.2s;
-      z-index: -1; }
-      .btn__p5 .wave::before {
+      .btn__p5-1 .wave {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: calc(100% + 46px);
+        background-color: #00aeff;
+        transition: all 1.2s;
+        z-index: -1; }
+        .btn__p5-1 .wave::before {
+          content: "";
+          position: absolute;
+          top: -48px;
+          left: 0;
+          width: 100%;
+          height: 48px;
+          background-image: url("../img/wave.png");
+          animation: wavy 0.3s linear infinite; }
+    .btn__p5-2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      position: relative;
+      background: transparent;
+      padding: 1.8rem 3rem; }
+      .btn__p5-2::before {
         content: "";
         position: absolute;
-        top: -48px;
+        top: -5px;
+        left: -1%;
+        width: 50%;
+        height: 100%;
+        background-color: #ee5253;
+        z-index: -1;
+        transform: skewX(30deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+      .btn__p5-2:hover::before {
+        transform: skewX(0);
+        left: 50%;
+        top: 0; }
+      .btn__p5-2::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 51%;
+        width: 50%;
+        height: 100%;
+        background-color: #0a3d62;
+        z-index: -1;
+        transform: skewX(30deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+      .btn__p5-2:hover::after {
+        transform: skewX(0);
+        left: 0%;
+        top: 0; }
+    .btn__p5-3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+      padding: 2.5rem 5rem;
+      background-color: white;
+      color: #777;
+      border-radius: 100px;
+      font-size: 2.4rem;
+      transition: all 0.2s; }
+      .btn__p5-3::before {
+        content: "";
+        position: absolute;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 48px;
-        background-image: url("../img/wave.png");
-        animation: wavy 0.3s linear infinite; }
+        height: 100%;
+        background-color: white;
+        border-radius: 100px;
+        transition: all 0.4s;
+        z-index: -1; }
+      .btn__p5-3:hover::before {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+      .btn__p5-3:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .btn__p5-3:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+    .btn__p5-4 {
+      width: 25rem;
+      padding: 0;
+      line-height: 8rem;
+      text-transform: uppercase;
+      position: relative;
+      text-align: center;
+      color: #250e74;
+      border: 4px solid #250e74;
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+      overflow: hidden; }
+      .btn__p5-4:hover {
+        color: white; }
+      .btn__p5-4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-top: 4rem solid #250e74;
+        border-bottom: 4rem solid #250e74;
+        border-right: 4rem solid transparent;
+        z-index: -1;
+        transition: all 0.5s;
+        transform: translateX(-100%); }
+      .btn__p5-4:hover::before {
+        transform: translateX(0); }
+      .btn__p5-4::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-top: 4rem solid #250e74;
+        border-bottom: 4rem solid #250e74;
+        border-left: 4rem solid transparent;
+        z-index: -1;
+        transition: all 0.5s;
+        transform: translateX(100%); }
+      .btn__p5-4:hover::after {
+        transform: translateX(0); }
 
 .bg {
   position: relative; }
@@ -820,6 +934,8 @@ h1 {
     background-color: #222; }
   .bg-2::before {
     background-color: grey; }
+  .bg-3::before {
+    background-color: #10ac84; }
 
 .container {
   max-width: 162rem;
@@ -841,7 +957,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr); }
 
 section {
-  padding: 2rem 15rem 0;
+  padding: 2rem 15rem 5rem;
   min-height: 25vh;
   background-color: #eee; }
   section:last-of-type {
