@@ -1083,3 +1083,7 @@ section {
   background-color: #eee; }
   section:last-of-type {
     padding: 2rem 15rem 15rem 15rem; }
+
+@media (max-width: 480px) {
+  .grid.grid__2col, .grid.grid__3col {
+    grid-template-columns: 1fr; } }

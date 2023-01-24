@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    &.grid__2col,
+    &.grid__3col {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
