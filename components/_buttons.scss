@@ -613,5 +613,460 @@
         transform: perspective(1500px) rotateX(-75deg);
       }
     }
+
+    &-11 {
+      text-transform: uppercase;
+      color: #f6b93b;
+      letter-spacing: 3px;
+      border: 3px solid #f6b93b;
+      transition: all 0.5s;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        color: #222;
+      }
+
+      &::before,
+      &::after,
+      span::before,
+      span::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: #f6b93b;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+
+      &::before {
+        top: 0;
+        left: -25%;
+      }
+
+      &::after {
+        top: -100%;
+        left: 25%;
+      }
+
+      &:hover::before {
+        top: 0;
+        left: 0;
+      }
+
+      &:hover::after {
+        top: 0;
+        left: 25%;
+      }
+
+      span::before {
+        top: 0;
+        right: -25%;
+      }
+
+      span::after {
+        bottom: -100%;
+        right: 25%;
+      }
+
+      &:hover span::before {
+        top: 0;
+        right: 0;
+      }
+
+      &:hover span::after {
+        bottom: 0;
+        right: 25%;
+      }
+    }
+
+    &-12 {
+      text-transform: uppercase;
+      color: #f6b93b;
+      letter-spacing: 3px;
+      border: 3px solid #f6b93b;
+      transition: all 0.5s;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        color: #222;
+      }
+
+      &::before,
+      &::after,
+      span::before,
+      span::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: #f6b93b;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+
+      &::before {
+        bottom: -100%;
+        left: 0%;
+      }
+
+      &::after {
+        top: -100%;
+        left: 25%;
+      }
+
+      &:hover::before {
+        bottom: 0;
+        left: 0;
+      }
+
+      &:hover::after {
+        top: 0;
+        left: 25%;
+      }
+
+      span::before {
+        top: -100%;
+        right: 0%;
+      }
+
+      span::after {
+        bottom: -100%;
+        right: 25%;
+      }
+
+      &:hover span::before {
+        top: 0;
+        right: 0;
+      }
+
+      &:hover span::after {
+        bottom: 0;
+        right: 25%;
+      }
+    }
+
+    &-13 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border: 3px solid #f6b93b;
+      transition: all 0.3s;
+      position: relative;
+      color: #222;
+      overflow: hidden;
+
+      &:hover {
+        color: #f6b93b;
+      }
+
+      &::before,
+      &::after,
+      span::before,
+      span::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: #f6b93b;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+
+      &:hover::before {
+        bottom: -100%;
+        left: 0%;
+      }
+
+      &:hover::after {
+        top: -100%;
+        left: 25%;
+      }
+
+      &::before {
+        bottom: 0;
+        left: 0;
+        transition-delay: 0.1s;
+      }
+
+      &::after {
+        top: 0;
+        left: 25%;
+        transition-delay: 0.2s;
+      }
+
+      &:hover span::before {
+        top: -100%;
+        right: 0%;
+      }
+
+      &:hover span::after {
+        bottom: -100%;
+        right: 25%;
+      }
+
+      span::before {
+        top: 0;
+        right: 0;
+        transition-delay: 0.4s;
+      }
+
+      span::after {
+        bottom: 0;
+        right: 25%;
+        transition-delay: 0.3s;
+      }
+    }
+
+    &-14 {
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      letter-spacing: 3px;
+      height: 8rem;
+      width: 20rem;
+      line-height: 6rem;
+      font-size: 2.2rem;
+      text-align: center;
+      color: #fdc518;
+      position: relative;
+      padding: 0;
+      transition: all 0.5s;
+      cursor: crosshair;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 9rem;
+        width: 20rem;
+        top: -15px;
+        left: 0;
+        border-left: 2px solid red;
+        border-right: 2px solid #fdc518;
+        transition: all 1s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 6rem;
+        width: 23rem;
+        top: 0;
+        left: -15px;
+        border-top: 2px solid red;
+        border-bottom: 2px solid #fdc518;
+        transition: all 1s 0.2s;
+      }
+
+      &:hover::before {
+        transform: rotateY(180deg);
+      }
+      &:hover::after {
+        transform: rotateX(180deg);
+      }
+    }
+
+    &-15 {
+      font-family: "BenchNine";
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: white;
+      background-color: #c47135;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: transparent;
+        border-top: 3px solid #c47135;
+        border-left: 3px solid #c47135;
+        transition: all 0.25s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: transparent;
+        border-bottom: 3px solid #c47135;
+        border-right: 3px solid #c47135;
+        transition: all 0.25s;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-16 {
+      color: black;
+      border: 2px solid black;
+      text-align: center;
+      position: relative;
+      transition: all 0.2s;
+
+      &:hover {
+        color: white;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.8s;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        transform: rotate(15deg);
+      }
+
+      span {
+        color: transparent;
+        position: relative;
+
+        &::before {
+          content: "B";
+          position: absolute;
+          color: black;
+          transition: all 0.2s;
+        }
+      }
+
+      &:hover span::before {
+        color: white;
+        font-size: 8rem;
+        transform: translate(-70%, -50%) rotate(360deg);
+      }
+    }
+
+    &-17 {
+      text-transform: uppercase;
+      color: white;
+      position: relative;
+      letter-spacing: 15px;
+      font-size: 4.5rem;
+      padding: 1rem;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        transition: all 0.5s;
+      }
+
+      &:hover::before {
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        transition: all 0.5s;
+      }
+
+      &:hover::after {
+        right: 0;
+      }
+
+      span::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -100%;
+        width: 4px;
+        height: 100%;
+        background-color: white;
+        transition: all 0.5s;
+      }
+
+      &:hover span::before {
+        top: 0;
+      }
+
+      span::after {
+        content: "";
+        position: absolute;
+        bottom: -100%;
+        left: 0%;
+        width: 4px;
+        height: 100%;
+        background-color: white;
+        transition: all 0.5s;
+      }
+
+      &:hover span::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  &__p5 {
+    padding: 3.6rem 7.2rem;
+    text-decoration: none;
+    transition: all 0.5s;
+
+    &-1 {
+      color: #00aeff;
+      position: relative;
+      letter-spacing: 3px;
+      border: 2px solid #00aeff;
+      text-transform: uppercase;
+      overflow: hidden;
+
+      &:hover {
+        color: white;
+
+        .wave {
+          top: 0;
+        }
+      }
+    }
+
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: calc(100% + 46px);
+      background-color: #00aeff;
+      transition: all 1.2s;
+      z-index: -1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -48px;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        background-image: url("../img/wave.png");
+        animation: wavy 0.3s linear infinite;
+      }
+    }
   }
 }
