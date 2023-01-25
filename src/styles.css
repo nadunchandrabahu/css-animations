@@ -1085,5 +1085,9 @@ section {
     padding: 2rem 15rem 15rem 15rem; }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 50%; }
   .grid.grid__2col, .grid.grid__3col {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  section.project-images, section.project-buttons {
+    padding: 2rem 2rem 5rem; } }
