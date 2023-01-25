@@ -19,14 +19,19 @@
         font-size: 2.4rem;
       }
     }
+
+    &-6 {
+      width: 21.6rem;
+      height: 28.8rem;
+    }
   }
 
   section {
     &.project-images,
     &.project-buttons {
       padding: 2rem 2rem 5rem;
-      display: grid;
-      place-content: center;
+      // display: grid;
+      // place-content: center;
     }
   }
 }

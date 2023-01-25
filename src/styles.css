@@ -1080,7 +1080,9 @@ h1 {
 section {
   padding: 2rem 15rem 5rem;
   min-height: 25vh;
-  background-color: #eee; }
+  background-color: #eee;
+  display: grid;
+  place-content: center; }
   section:last-of-type {
     padding: 2rem 15rem 15rem 15rem; }
 
@@ -1094,7 +1096,8 @@ section {
     height: 36rem; }
     .img .image-caption h2 {
       font-size: 2.4rem; }
+    .img-6 {
+      width: 21.6rem;
+      height: 28.8rem; }
   section.project-images, section.project-buttons {
-    padding: 2rem 2rem 5rem;
-    display: grid;
-    place-content: center; } }
+    padding: 2rem 2rem 5rem; } }

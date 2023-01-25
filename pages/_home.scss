@@ -2,6 +2,8 @@ section {
   padding: 2rem 15rem 5rem;
   min-height: 25vh;
   background-color: #eee;
+  display: grid;
+  place-content: center;
 
   &:last-of-type {
     padding: 2rem 15rem 15rem 15rem;
