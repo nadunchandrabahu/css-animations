@@ -1154,6 +1154,15 @@ h1 {
     font-size: 1.8rem;
     text-transform: capitalize; }
 
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.menu li {
+  list-style: none;
+  color: blueviolet; }
+
 .container {
   max-width: 162rem;
   margin: 0 auto; }
