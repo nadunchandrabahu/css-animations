@@ -333,12 +333,42 @@
     a {
       display: block;
       font-family: "Raleway", sans-serif;
-      padding: 1rem 1.5rem;
+      // padding: 1rem 1.5rem;
       font-size: 8rem;
       font-weight: 700;
       color: transparent;
       -webkit-text-stroke: 1px white;
       position: relative;
+
+      &::before,
+      &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+        text-transform: capitalize;
+      }
+
+      &:hover::before {
+        color: rgb(187, 0, 0);
+        z-index: 1;
+        -webkit-text-stroke: 1px black;
+        transform: translate(1rem, -1rem);
+      }
+
+      &:hover::after {
+        color: rgb(119, 239, 255);
+        z-index: 2;
+        -webkit-text-stroke: 1px black;
+        transform: translate(2rem, -2rem);
+      }
+
+      &:hover {
+        color: white;
+        -webkit-text-stroke: 1px black;
+        transition: all 0.5s;
+      }
     }
   }
 }
